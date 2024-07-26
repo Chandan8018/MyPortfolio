@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { cn } from "../../lib/utils";
 import { HoveredLink, Menu, MenuItem, ProductItem } from "../ui/navbar-menu";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { TbHexagonLetterC } from "react-icons/tb";
 import { Button } from "flowbite-react";
 
@@ -15,6 +15,7 @@ function Header() {
 
 function Navbar({ className }) {
   const [active, setActive] = useState("");
+  const navigate = useNavigate();
   return (
     <div
       className={cn("fixed top-10 inset-x-0 max-w-4xl mx-auto z-50", className)}
@@ -74,14 +75,11 @@ function Navbar({ className }) {
                 <HoveredLink href='/enterprise'>Enterprise</HoveredLink>
               </div>
             </MenuItem>
-            <MenuItem setActive={setActive} active={active} item='Skils'>
-              <div className='flex flex-col space-y-4 text-sm'>
-                <HoveredLink href='/hobby'>MongoDB</HoveredLink>
-                <HoveredLink href='/individual'>Express</HoveredLink>
-                <HoveredLink href='/team'>React</HoveredLink>
-                <HoveredLink href='/enterprise'>Node</HoveredLink>
-              </div>
-            </MenuItem>
+            <MenuItem
+              setActive={setActive}
+              active={active}
+              item={<span onClick={() => navigate("/skills")}>Skills</span>}
+            ></MenuItem>
           </div>
 
           <Button>Resume</Button>

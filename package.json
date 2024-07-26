@@ -10,6 +10,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@mantine/core": "^7.11.2",
+    "@tabler/icons-react": "^3.11.0",
     "clsx": "^2.1.1",
     "flowbite-react": "^0.10.1",
     "framer-motion": "^11.3.17",
