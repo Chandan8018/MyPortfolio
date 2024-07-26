@@ -1,7 +1,8 @@
 import React from "react";
+import HeroSection from "./HeroSection";
 
 function Home() {
-  return <div className='min-h-screen bg-bgColor'>Home</div>;
+  return <HeroSection />;
 }
 
 export default Home;
