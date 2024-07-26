@@ -7,6 +7,7 @@ import {
   MotionValue,
 } from "framer-motion";
 import { Link } from "react-router-dom";
+import About from "../../pages/About";
 
 export const HeroParallax = ({ products }) => {
   const firstRow = products.slice(0, 5);
@@ -93,15 +94,8 @@ export const HeroParallax = ({ products }) => {
 
 export const Header = () => {
   return (
-    <div className='max-w-7xl relative mx-auto py-10 md:py-20 px-4 w-full  left-0 top-0'>
-      <h1 className='text-2xl md:text-7xl font-bold dark:text-white text-white'>
-        The Ultimate <br /> development studio
-      </h1>
-      <p className='max-w-2xl text-base md:text-xl mt-8 dark:text-neutral-200 text-textColor'>
-        We build beautiful products with the latest technologies and frameworks.
-        We are a team of passionate developers and designers that love to build
-        amazing products.
-      </p>
+    <div className='max-w-7xl mx-auto py-10 px-4 w-full'>
+      <About />
     </div>
   );
 };
