@@ -148,22 +148,30 @@ const SkillInfo = [
   },
 ];
 const socialLinks = [
-  { link: "https://github.com/Chandan8018", icon: IconBrandGithub },
+  {
+    link: "https://github.com/Chandan8018",
+    icon: IconBrandGithub,
+    title: "Github",
+  },
   {
     link: "https://www.linkedin.com/in/chandan801853/",
     icon: IconBrandLinkedin,
+    title: "LinkedIn",
   },
   {
     link: "https://www.instagram.com/chandan___sahoo/",
     icon: IconBrandInstagram,
+    title: "Instagram",
   },
   {
     link: "https://www.hackerrank.com/profile/chandankumarsah4",
     icon: IconBrandHackerrank,
+    title: "HackerRank",
   },
   {
     link: "https://leetcode.com/u/chandankumarsahoo/",
     icon: IconBrandLeetcode,
+    title: "Leetcode",
   },
 ];
 

@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { socialLinks } from "../User";
+import { Tooltip } from "flowbite-react";
 
 const Social = () => {
   const socialIcons = socialLinks.map((socialLink, index) => {
@@ -12,7 +13,14 @@ const Social = () => {
       >
         <div data-aos='fade-up-left' data-aos-duration='800'>
           {" "}
-          <socialLink.icon stroke={2} className='-rotate-90' size={25} />
+          <Tooltip
+            content={socialLink.title}
+            placement='top'
+            color='primary'
+            className='text-primaryColor'
+          >
+            <socialLink.icon stroke={2} className='-rotate-90' size={25} />
+          </Tooltip>
         </div>
       </Link>
     );
