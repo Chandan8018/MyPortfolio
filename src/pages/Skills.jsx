@@ -1,5 +1,6 @@
 import { SkillInfo } from "../User";
 import SkillCard from "./SkillCard";
+import { CardBody, CardContainer, CardItem } from "../components/ui/3d-card";
 
 const Skills = () => {
   return (

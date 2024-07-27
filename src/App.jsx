@@ -10,6 +10,7 @@ import { pdfjs } from "react-pdf";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Projects from "./pages/Projects";
+import HeroSection from "./pages/HeroSection";
 
 pdfjs.GlobalWorkerOptions.workerSrc = `https://cdn.jsdelivr.net/npm/pdfjs-dist@${pdfjs.version}/build/pdf.worker.min.mjs`;
 
@@ -39,6 +40,7 @@ function App() {
           <Route path='/' element={<Home />} />
           <Route path='/skills' element={<Skills />} />
           <Route path='/projects' element={<Projects />} />
+          <Route path='/about' element={<HeroSection />} />
         </Routes>
       </BrowserRouter>
     </MantineProvider>

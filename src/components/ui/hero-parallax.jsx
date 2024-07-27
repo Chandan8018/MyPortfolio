@@ -94,7 +94,7 @@ export const HeroParallax = ({ products }) => {
 
 export const Header = () => {
   return (
-    <div className='max-w-7xl mx-auto py-10 px-4 w-full'>
+    <div className='max-w-7xl mx-auto py-10 px-4 w-full z-30'>
       <About />
     </div>
   );

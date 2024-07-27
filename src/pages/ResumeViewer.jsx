@@ -1,3 +1,4 @@
+import { useState } from "react";
 import {
   ActionIcon,
   Modal,
@@ -10,11 +11,18 @@ import { Document, Page } from "react-pdf";
 import { Info } from "../User";
 
 const ResumeViewer = (props) => {
+  const [numPages, setNumPages] = useState(null);
+
+  const onDocumentLoadSuccess = ({ numPages }) => {
+    setNumPages(numPages);
+  };
+
   const btn = useMatches({
     xs: "xs",
     sm: "sm",
     md: "md",
   });
+
   return (
     <Modal.Root
       scrollAreaComponent={ScrollArea.Autosize}
@@ -62,17 +70,22 @@ const ResumeViewer = (props) => {
           <Document
             className='w-full !rounded-2xl !overflow-hidden !min-w-40 !min-h-14'
             file='Resume.pdf'
+            onLoadSuccess={onDocumentLoadSuccess}
           >
-            <Page
-              className='w-full !min-w-40 !min-h-14 md-mx:[&>.react-pdf\_\_Page\_\_canvas]:!w-full md-mx:[&>.react-pdf\_\_Page\_\_canvas]:!h-auto'
-              pageNumber={1}
-              renderTextLayer={false}
-              renderAnnotationLayer={false}
-            />
+            {Array.from(new Array(numPages), (el, index) => (
+              <Page
+                key={`page_${index + 1}`}
+                className='w-full !min-w-40 !min-h-14 md-mx:[&>.react-pdf\_\_Page\_\_canvas]:!w-full md-mx:[&>.react-pdf\_\_Page\_\_canvas]:!h-auto'
+                pageNumber={index + 1}
+                renderTextLayer={false}
+                renderAnnotationLayer={false}
+              />
+            ))}
           </Document>
         </Modal.Body>
       </Modal.Content>
     </Modal.Root>
   );
 };
+
 export default ResumeViewer;

@@ -5,6 +5,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { TbHexagonLetterC } from "react-icons/tb";
 import { Button } from "flowbite-react";
 import { ProjectInfo } from "../../User";
+import { HoverBorderGradient } from "../ui/hover-border-gradient";
 
 function Header() {
   return (
@@ -28,18 +29,12 @@ function Navbar({ className }) {
           </Link>
 
           <div className='flex items-center justify-center gap-2 md:gap-5 '>
-            <MenuItem setActive={setActive} active={active} item='Services'>
-              <div className='flex flex-col space-y-4 text-sm'>
-                <HoveredLink href='/web-dev'>Web Development</HoveredLink>
-                <HoveredLink href='/interface-design'>
-                  Interface Design
-                </HoveredLink>
-                <HoveredLink href='/seo'>
-                  Search Engine Optimization
-                </HoveredLink>
-                <HoveredLink href='/branding'>Branding</HoveredLink>
-              </div>
-            </MenuItem>
+            <MenuItem
+              setActive={setActive}
+              active={active}
+              item={<span onClick={() => navigate("/about")}>About</span>}
+            />
+
             <MenuItem setActive={setActive} active={active} item='Projects'>
               <div className='text-sm grid grid-cols-2 gap-10 p-4'>
                 <ProductItem
@@ -68,22 +63,32 @@ function Navbar({ className }) {
                 />
               </div>
             </MenuItem>
-            <MenuItem setActive={setActive} active={active} item='About'>
-              <div className='flex flex-col space-y-4 text-sm'>
-                <HoveredLink href='/hobby'>Hobby</HoveredLink>
-                <HoveredLink href='/individual'>Individual</HoveredLink>
-                <HoveredLink href='/team'>Team</HoveredLink>
-                <HoveredLink href='/enterprise'>Enterprise</HoveredLink>
-              </div>
-            </MenuItem>
+
             <MenuItem
               setActive={setActive}
               active={active}
               item={<span onClick={() => navigate("/skills")}>Skills</span>}
-            ></MenuItem>
+            />
           </div>
-
-          <Button>Resume</Button>
+          <div children='w-28'>
+            <HoverBorderGradient
+              containerClassName='rounded-lg'
+              className=' flex items-center space-x-2 w-full'
+            >
+              <MenuItem setActive={setActive} active={active} item='Services'>
+                <div className='flex flex-col space-y-4 text-sm'>
+                  <HoveredLink href='/web-dev'>Web Development</HoveredLink>
+                  <HoveredLink href='/interface-design'>
+                    Interface Design
+                  </HoveredLink>
+                  <HoveredLink href='/seo'>
+                    Search Engine Optimization
+                  </HoveredLink>
+                  <HoveredLink href='/branding'>Branding</HoveredLink>
+                </div>
+              </MenuItem>
+            </HoverBorderGradient>
+          </div>
         </div>
       </Menu>
     </div>

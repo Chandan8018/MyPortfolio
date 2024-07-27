@@ -1,12 +1,15 @@
 import { Info } from "../User";
 import Typewriter from "typewriter-effect";
 import { Button, useMatches } from "@mantine/core";
-// import ResumeViewer from "./ResumeViewer";
+import ResumeViewer from "./ResumeViewer";
 import { useDisclosure } from "@mantine/hooks";
 import { IconDownload } from "@tabler/icons-react";
 // import Particles from "./magicui/Particles";
 import { BackgroundGradient } from "../components/ui/background-gradient";
+import { HoverBorderGradient } from "../components/ui/hover-border-gradient";
 const About = () => {
+  const [opened, { open, close }] = useDisclosure(false);
+
   const btn = useMatches({
     xs: "xs",
     sm: "sm",
@@ -48,6 +51,29 @@ const About = () => {
           <div className='text-textColor text-xl w-[90%] text-justify my-8 lg-mx:my-0 font-semibold lg-mx:text-base sm-mx:text-sm xs-mx:text-xs'>
             {Info.bio}
           </div>
+          <div className='xs-mx:w-[90%] flex gap-3 xs-mx:justify-between'>
+            <Button
+              onClick={open}
+              className='focus-visible:!outline-none !text-bgColor !w-fit xs-mx:!w-[46%]'
+              size={btn}
+              variant='filled'
+              color='#64FFDA'
+            >
+              Check Resume
+            </Button>
+            <Button
+              component='a'
+              href='Resume.pdf'
+              download={Info.name}
+              className='focus-visible:!outline-none !text-primaryColor !w-fit xs-mx:!w-[46%]'
+              size={btn}
+              variant='outline'
+              color='#64FFDA'
+              rightSection={<IconDownload size={20} />}
+            >
+              Download
+            </Button>
+          </div>
         </div>
 
         <BackgroundGradient className='rounded-full max-w-[20rem] bg-white dark:bg-zinc-900'>
@@ -58,6 +84,7 @@ const About = () => {
           />
         </BackgroundGradient>
       </div>
+      <ResumeViewer opened={opened} close={close} />
     </>
   );
 };
