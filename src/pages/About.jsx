@@ -5,7 +5,6 @@ import { Button, useMatches } from "@mantine/core";
 import { useDisclosure } from "@mantine/hooks";
 import { IconDownload } from "@tabler/icons-react";
 // import Particles from "./magicui/Particles";
-import { NeonGradientCard } from "../cards/Neon-gradient-card";
 import { BackgroundGradient } from "../components/ui/background-gradient";
 const About = () => {
   const btn = useMatches({

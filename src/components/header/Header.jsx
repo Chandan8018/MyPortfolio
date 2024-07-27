@@ -4,6 +4,7 @@ import { HoveredLink, Menu, MenuItem, ProductItem } from "../ui/navbar-menu";
 import { Link, useNavigate } from "react-router-dom";
 import { TbHexagonLetterC } from "react-icons/tb";
 import { Button } from "flowbite-react";
+import { ProjectInfo } from "../../User";
 
 function Header() {
   return (
@@ -40,30 +41,30 @@ function Navbar({ className }) {
               </div>
             </MenuItem>
             <MenuItem setActive={setActive} active={active} item='Projects'>
-              <div className='  text-sm grid grid-cols-2 gap-10 p-4'>
+              <div className='text-sm grid grid-cols-2 gap-10 p-4'>
                 <ProductItem
-                  title='Algochurn'
-                  href='https://algochurn.com'
-                  src='https://assets.aceternity.com/demos/algochurn.webp'
-                  description='Prepare for tech interviews like never before.'
+                  title='Invoice Generation'
+                  href='/projects'
+                  src='invoice.png'
+                  description='This project involves generating a detailed invoice based on various input parameters.'
                 />
                 <ProductItem
-                  title='Tailwind Master Kit'
-                  href='https://tailwindmasterkit.com'
-                  src='https://assets.aceternity.com/demos/tailwindmasterkit.webp'
-                  description='Production ready Tailwind css components for your next project'
+                  title='Patient Chatbot'
+                  href='/projects'
+                  src='chat.png'
+                  description='The purpose of this project is to build a patient dashboard with access to a chatbot.'
                 />
                 <ProductItem
-                  title='Moonbeam'
-                  href='https://gomoonbeam.com'
-                  src='https://assets.aceternity.com/demos/Screenshot+2024-02-21+at+11.51.31%E2%80%AFPM.png'
-                  description='Never write from scratch again. Go from idea to blog in minutes.'
+                  title='Library System'
+                  href='/projects'
+                  src='lms.png'
+                  description='This project is a simple library management system built using the MERN stack.'
                 />
                 <ProductItem
-                  title='Rogue'
-                  href='https://userogue.com'
-                  src='https://assets.aceternity.com/demos/Screenshot+2024-02-21+at+11.47.07%E2%80%AFPM.png'
-                  description='Respond to government RFPs, RFIs and RFQs 10x faster using AI'
+                  title='secret desires'
+                  href='/projects'
+                  src='AIchatbot.png'
+                  description="Project Name is a Secret Desires. The power of OpenAI's advanced artificial intelligence technology."
                 />
               </div>
             </MenuItem>
