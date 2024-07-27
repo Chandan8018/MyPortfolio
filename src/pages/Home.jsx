@@ -5,6 +5,7 @@ import Projects from "./Projects";
 import { Loader } from "../components/loader/Loader";
 import { Toaster } from "react-hot-toast";
 import Social from "./Social";
+import Experience from "./Experience";
 
 function Home() {
   const [loading, setLoading] = useState(true);
@@ -27,6 +28,7 @@ function Home() {
           <HeroSection />
           <Projects />
           <Skills />
+          <Experience />
           <Social />
         </>
       ) : (

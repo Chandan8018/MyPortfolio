@@ -69,6 +69,13 @@ function Navbar({ className }) {
               active={active}
               item={<span onClick={() => navigate("/skills")}>Skills</span>}
             />
+            <MenuItem
+              setActive={setActive}
+              active={active}
+              item={
+                <span onClick={() => navigate("/experience")}>Experience</span>
+              }
+            />
           </div>
           <div children='w-28'>
             <HoverBorderGradient

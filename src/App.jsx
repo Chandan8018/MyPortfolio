@@ -12,6 +12,7 @@ import "aos/dist/aos.css";
 import Projects from "./pages/Projects";
 import HeroSection from "./pages/HeroSection";
 import Footer from "./components/footer/Footer";
+import Experience from "./pages/Experience";
 
 pdfjs.GlobalWorkerOptions.workerSrc = `https://cdn.jsdelivr.net/npm/pdfjs-dist@${pdfjs.version}/build/pdf.worker.min.mjs`;
 
@@ -42,6 +43,7 @@ function App() {
           <Route path='/skills' element={<Skills />} />
           <Route path='/projects' element={<Projects />} />
           <Route path='/about' element={<HeroSection />} />
+          <Route path='/experience' element={<Experience />} />
         </Routes>
         <Footer />
       </BrowserRouter>
