@@ -12,8 +12,10 @@ export function Loader() {
         color='#64FFDA'
         stroke={1.25}
       />
-      <div className=' absolute font-mono text-primaryColor font-semibold text-6xl -z-10'>
-        CK
+      <div className=' absolute font-mono text-primaryColor font-semibold text-xl -z-10 text-center'>
+        Chandan
+        <br />
+        Kumar
       </div>
     </div>
   );
