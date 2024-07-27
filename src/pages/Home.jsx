@@ -6,6 +6,7 @@ import { Loader } from "../components/loader/Loader";
 import { Toaster } from "react-hot-toast";
 import Social from "./Social";
 import Experience from "./Experience";
+import Contact from "./Contact";
 
 function Home() {
   const [loading, setLoading] = useState(true);
@@ -29,6 +30,7 @@ function Home() {
           <Projects />
           <Skills />
           <Experience />
+          <Contact />
           <Social />
         </>
       ) : (
