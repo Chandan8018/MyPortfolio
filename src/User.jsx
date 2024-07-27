@@ -200,10 +200,8 @@ const ExperienceInfo = [
 ];
 const Slugs = [
   "typescript",
-  "spring",
   "javascript",
   "dart",
-  "java",
   "react",
   "angular",
   "flutter",
