@@ -4,6 +4,7 @@ import {
   IconBrandLeetcode,
   IconBrandLinkedin,
   IconBrandYoutube,
+  IconBrandHackerrank,
 } from "@tabler/icons-react";
 const Info = {
   name: "Chandan Kumar Sahoo",
@@ -157,8 +158,8 @@ const socialLinks = [
     icon: IconBrandInstagram,
   },
   {
-    link: "#",
-    icon: IconBrandYoutube,
+    link: "https://www.hackerrank.com/profile/chandankumarsah4",
+    icon: IconBrandHackerrank,
   },
   {
     link: "https://leetcode.com/u/chandankumarsahoo/",
