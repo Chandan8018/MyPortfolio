@@ -49,7 +49,7 @@ const Contact = () => {
   });
   return (
     <div
-      className='px-16 md-mx:px-8 sm-mx:px-4 mx-20 lg-mx:mx-10 md-mx:mx-0   my-10  font-mono'
+      className='px-16 md-mx:px-8 sm-mx:px-4 mx-20 lg-mx:mx-10 md-mx:mx-0 mb-10 mt-20 font-mono'
       id='Contact'
     >
       <h1 className='text-4xl  sm-mx:text-3xl xs-mx:text-2xl mb-10 font-bold text-center text-white'>

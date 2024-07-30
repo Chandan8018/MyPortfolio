@@ -76,6 +76,11 @@ function Navbar({ className }) {
                 <span onClick={() => navigate("/experience")}>Experience</span>
               }
             />
+            <MenuItem
+              setActive={setActive}
+              active={active}
+              item={<span onClick={() => navigate("/contact")}>Contact</span>}
+            />
           </div>
           <div children='w-28'>
             <HoverBorderGradient
@@ -86,12 +91,10 @@ function Navbar({ className }) {
                 <div className='flex flex-col space-y-4 text-sm'>
                   <HoveredLink href='/web-dev'>Web Development</HoveredLink>
                   <HoveredLink href='/interface-design'>
-                    Interface Design
+                    Full Stack Development
                   </HoveredLink>
-                  <HoveredLink href='/seo'>
-                    Search Engine Optimization
-                  </HoveredLink>
-                  <HoveredLink href='/branding'>Branding</HoveredLink>
+                  <HoveredLink href='/seo'>Next.js Development</HoveredLink>
+                  <HoveredLink href='/branding'>React Development</HoveredLink>
                 </div>
               </MenuItem>
             </HoverBorderGradient>
