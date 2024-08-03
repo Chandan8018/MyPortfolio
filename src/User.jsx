@@ -3,7 +3,6 @@ import {
   IconBrandInstagram,
   IconBrandLeetcode,
   IconBrandLinkedin,
-  IconBrandYoutube,
   IconBrandHackerrank,
 } from "@tabler/icons-react";
 const Info = {
@@ -96,7 +95,7 @@ const ProjectInfo = [
     desc: "The Online Quiz Platform is a web application that allows users to take quizzes, view their scores, and review correct answers. Admins can create and manage quizzes with multiple-choice questions. This application is built with modern web technologies to ensure a responsive and user-friendly experience. Admins can create quizzes with multiple-choice questions. Users can take quizzes by answering multiple-choice questions. Users can submit their answers and receive a score.Users can review their answers with the correct ones highlighted.",
     image: "quiz.png",
     live: true,
-    technologies: ["React", "Node.js", "Framer MotionL", "Express", "flowbite"],
+    technologies: ["React", "Node.js", "Framer Motion", "Express", "flowbite"],
     link: "https://onlinequiz-3w9v.onrender.com/",
     github: "https://github.com/Chandan8018/OnlineQuiz",
   },
@@ -106,7 +105,7 @@ const ProjectInfo = [
     desc: "This project is a full-stack web application for creating and managing blog posts. It is built using the MERN stack, which includes MongoDB, Express.js, React, and Node.js. The application allows users to create, read, update, and delete blog posts. It also includes user authentication and authorization features to ensure secure access to the blogging platform.",
     image: "Blog.png",
     live: false,
-    technologies: ["React", "Tailwind", "Ace Editor"],
+    technologies: ["React", "Tailwind", "Node JS"],
     link: "#",
     github: "https://github.com/Chandan8018/MERN-Blog",
   },

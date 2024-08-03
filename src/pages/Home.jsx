@@ -8,6 +8,7 @@ import Social from "./Social";
 import Experience from "./Experience";
 import Contact from "./Contact";
 import Mail from "./Mail";
+import Certifiction from "./Certifiction";
 
 function Home() {
   const [loading, setLoading] = useState(true);
@@ -31,6 +32,7 @@ function Home() {
           <Projects />
           <Skills />
           <Experience />
+          <Certifiction />
           <Contact />
           <Social />
           <Mail />
