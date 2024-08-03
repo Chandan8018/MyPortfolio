@@ -6,7 +6,6 @@ import { useDisclosure } from "@mantine/hooks";
 import { IconDownload } from "@tabler/icons-react";
 // import Particles from "./magicui/Particles";
 import { BackgroundGradient } from "../components/ui/background-gradient";
-import { HoverBorderGradient } from "../components/ui/hover-border-gradient";
 const About = () => {
   const [opened, { open, close }] = useDisclosure(false);
 

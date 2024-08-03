@@ -17,11 +17,22 @@ export default {
       animation: {
         backgroundPositionSpin:
           "background-position-spin 3000ms infinite alternate",
+        spotlight: "spotlight 2s ease .75s 1 forwards",
       },
       keyframes: {
         "background-position-spin": {
           "0%": { backgroundPosition: "top center" },
           "100%": { backgroundPosition: "bottom center" },
+        },
+        spotlight: {
+          "0%": {
+            opacity: 0,
+            transform: "translate(-72%, -62%) scale(0.5)",
+          },
+          "100%": {
+            opacity: 1,
+            transform: "translate(-50%,-40%) scale(1)",
+          },
         },
       },
     },

@@ -8,7 +8,8 @@ import Social from "./Social";
 import Experience from "./Experience";
 import Contact from "./Contact";
 import Mail from "./Mail";
-import Certifiction from "./Certifiction";
+import Certification from "./Certification";
+import { Spotlight } from "../components/ui/Spotlight";
 
 function Home() {
   const [loading, setLoading] = useState(true);
@@ -27,12 +28,16 @@ function Home() {
     >
       {loading !== true ? (
         <>
+          <Spotlight
+            className='-top-40 left-0 md:left-60 md:-top-20 z-50'
+            fill='white'
+          />
           <Toaster />
           <HeroSection />
           <Projects />
           <Skills />
           <Experience />
-          <Certifiction />
+          <Certification />
           <Contact />
           <Social />
           <Mail />

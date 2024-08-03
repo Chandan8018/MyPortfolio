@@ -71,15 +71,15 @@ const content = [
     ),
   },
 ];
-function Certifiction() {
+function Certification() {
   return (
     <div className='mt-20'>
       <h1 className='text-4xl sm-mx:text-3xl xs-mx:text-2xl mb-10 font-bold text-center text-white'>
-        Certifiction
+        Certification
       </h1>
       <StickyScroll content={content} />
     </div>
   );
 }
 
-export default Certifiction;
+export default Certification;
