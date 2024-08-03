@@ -125,6 +125,7 @@ const SkillInfo = [
       "Tailwind CSS",
       "Material UI",
       "Bootstrap",
+      "Next JS",
     ],
   },
   {
@@ -136,6 +137,7 @@ const SkillInfo = [
       "MongoDB",
       "Firebase",
       "PostgresSQL",
+      "Next JS",
     ],
   },
   {
