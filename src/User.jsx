@@ -270,4 +270,83 @@ const Slugs = [
   "sonarqube",
   "figma",
 ];
-export { Info, ProjectInfo, socialLinks, SkillInfo, ExperienceInfo, Slugs };
+
+const content = [
+  {
+    title: "Application Architect Web and Mobile",
+    description:
+      "Completed the PMKVY 4.0 Future Skills program in collaboration with IBM at Lamrin Tech Skills University. This certification covers advanced skills in web and mobile application architecture, focusing on industry standards and best practices.",
+    organization:
+      "National Council for Vocational Education and Training (NCVET)",
+    issuedDate: "May 2024",
+    content: (
+      <div className='h-full w-full  flex items-center justify-center text-white'>
+        <img
+          src='/webDevelopment.png'
+          width={300}
+          height={300}
+          className='h-full w-full object-cover'
+          alt='linear board demo'
+        />
+      </div>
+    ),
+  },
+  {
+    title: "HackerRank certified JavaScript (Intermediate)",
+    organization: "HackerRank",
+    issuedDate: "April 2024",
+    description:
+      "This certification validates my proficiency in JavaScript, covering advanced concepts such as closures, asynchronous programming, and error handling. I demonstrated my ability to solve complex coding challenges and develop robust, efficient solutions.",
+    content: (
+      <div className='h-full w-full  flex items-center justify-center text-white'>
+        <img
+          src='/HackerRankJavascript.png'
+          className='h-full w-full object-cover'
+          alt='linear board demo'
+        />
+      </div>
+    ),
+  },
+  {
+    title: "Employabilitylife certified Experiential Project Certificate",
+    organization: "Emplife India Private Limited",
+    issuedDate: "May 2024",
+    description:
+      "Completed a comprehensive project on developing a Library Management System. The project involved designing and implementing a full-fledged system for managing library resources, including book cataloging, member management, and transaction tracking. Demonstrated proficiency in software development, database management, and project execution.",
+    content: (
+      <div className='h-full w-full  flex items-center justify-center text-white'>
+        <img
+          src='/internship.png'
+          className='h-full w-full object-cover'
+          alt='linear board demo'
+        />
+      </div>
+    ),
+  },
+  {
+    title: "Hackerrank certified React JS",
+    organization: "HackerRank",
+    issuedDate: "April 2024",
+    description:
+      " This certification validates proficiency in React JS, covering key concepts such as component-based architecture, state management, React Hooks, and efficient UI rendering techniques. The assessment involved solving complex coding challenges and building functional React applications.",
+    content: (
+      <div className='h-full w-full  flex items-center justify-center text-white'>
+        <img
+          src='/HackerRankReact.png'
+          className='h-full w-full object-cover'
+          alt='linear board demo'
+        />
+      </div>
+    ),
+  },
+];
+
+export {
+  Info,
+  ProjectInfo,
+  socialLinks,
+  SkillInfo,
+  ExperienceInfo,
+  Slugs,
+  content,
+};
