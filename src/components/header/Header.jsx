@@ -28,59 +28,71 @@ function Navbar({ className }) {
             <TbHexagonLetterC className='w-12 h-12 text-primaryColor' />
           </Link>
 
-          <div className='flex items-center justify-center gap-2 md:gap-5 '>
-            <MenuItem
-              setActive={setActive}
-              active={active}
-              item={<span onClick={() => navigate("/about")}>About</span>}
-            />
+          <div className='hidden md:block lg:block'>
+            <div className='flex items-center justify-center gap-2 md:gap-5 '>
+              <MenuItem
+                setActive={setActive}
+                active={active}
+                item={<span onClick={() => navigate("/about")}>About</span>}
+              />
+              <MenuItem setActive={setActive} active={active} item='Projects'>
+                <div className='text-sm grid grid-cols-2 gap-10 p-4'>
+                  <ProductItem
+                    title='Invoice Generation'
+                    href='/projects'
+                    src='invoice.png'
+                    description='This project involves generating a detailed invoice based on various input parameters.'
+                  />
+                  <ProductItem
+                    title='Patient Chatbot'
+                    href='/projects'
+                    src='chat.png'
+                    description='The purpose of this project is to build a patient dashboard with access to a chatbot.'
+                  />
+                  <ProductItem
+                    title='Library System'
+                    href='/projects'
+                    src='lms.png'
+                    description='This project is a simple library management system built using the MERN stack.'
+                  />
+                  <ProductItem
+                    title='secret desires'
+                    href='/projects'
+                    src='AIchatbot.png'
+                    description="Project Name is a Secret Desires. The power of OpenAI's advanced artificial intelligence technology."
+                  />
+                </div>
+              </MenuItem>
+              <MenuItem
+                setActive={setActive}
+                active={active}
+                item={<span onClick={() => navigate("/skills")}>Skills</span>}
+              />
+              <MenuItem
+                setActive={setActive}
+                active={active}
+                item={
+                  <span onClick={() => navigate("/experience")}>
+                    Experience
+                  </span>
+                }
+              />
+              <MenuItem
+                setActive={setActive}
+                active={active}
+                item={
+                  <span onClick={() => navigate("/certification")}>
+                    Certification
+                  </span>
+                }
+              />
 
-            <MenuItem setActive={setActive} active={active} item='Projects'>
-              <div className='text-sm grid grid-cols-2 gap-10 p-4'>
-                <ProductItem
-                  title='Invoice Generation'
-                  href='/projects'
-                  src='invoice.png'
-                  description='This project involves generating a detailed invoice based on various input parameters.'
-                />
-                <ProductItem
-                  title='Patient Chatbot'
-                  href='/projects'
-                  src='chat.png'
-                  description='The purpose of this project is to build a patient dashboard with access to a chatbot.'
-                />
-                <ProductItem
-                  title='Library System'
-                  href='/projects'
-                  src='lms.png'
-                  description='This project is a simple library management system built using the MERN stack.'
-                />
-                <ProductItem
-                  title='secret desires'
-                  href='/projects'
-                  src='AIchatbot.png'
-                  description="Project Name is a Secret Desires. The power of OpenAI's advanced artificial intelligence technology."
-                />
-              </div>
-            </MenuItem>
-
-            <MenuItem
-              setActive={setActive}
-              active={active}
-              item={<span onClick={() => navigate("/skills")}>Skills</span>}
-            />
-            <MenuItem
-              setActive={setActive}
-              active={active}
-              item={
-                <span onClick={() => navigate("/experience")}>Experience</span>
-              }
-            />
-            <MenuItem
-              setActive={setActive}
-              active={active}
-              item={<span onClick={() => navigate("/contact")}>Contact</span>}
-            />
+              <MenuItem
+                setActive={setActive}
+                active={active}
+                item={<span onClick={() => navigate("/contact")}>Contact</span>}
+              />
+            </div>
           </div>
           <div children='w-28'>
             <HoverBorderGradient

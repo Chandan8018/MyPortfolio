@@ -14,6 +14,7 @@ import HeroSection from "./pages/HeroSection";
 import Footer from "./components/footer/Footer";
 import Experience from "./pages/Experience";
 import Contact from "./pages/Contact";
+import Certification from "./pages/Certification";
 
 pdfjs.GlobalWorkerOptions.workerSrc = `https://cdn.jsdelivr.net/npm/pdfjs-dist@${pdfjs.version}/build/pdf.worker.min.mjs`;
 
@@ -45,6 +46,7 @@ function App() {
           <Route path='/projects' element={<Projects />} />
           <Route path='/about' element={<HeroSection />} />
           <Route path='/experience' element={<Experience />} />
+          <Route path='/certification' element={<Certification />} />
           <Route path='/contact' element={<Contact />} />
         </Routes>
         <Footer />
